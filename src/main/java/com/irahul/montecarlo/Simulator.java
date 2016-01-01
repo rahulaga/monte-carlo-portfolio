@@ -64,6 +64,31 @@ public class Simulator {
 		}
 	}
 
+	public double getInflation() {
+		return inflation;
+	}
+
+	public void setInflation(double inflation) {
+		this.inflation = inflation;
+	}
+
+	public long getSimulations() {
+		return simulations;
+	}
+
+	public void setSimulations(long simulations) {
+		this.simulations = simulations;
+	}
+
+	public int getPeriods() {
+		return periods;
+	}
+
+	public void setPeriods(int periods) {
+		this.periods = periods;
+	}
+
+	//internal class to save state during a simulation run
 	private class SimulatorState{
 		private NormalDistribution normalDistribution;
 		private DescriptiveStatistics stats;
